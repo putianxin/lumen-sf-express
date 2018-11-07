@@ -42,9 +42,13 @@ class SFServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(dirname(__DIR__).'/config/sf-express.php', 'sf-express');
-
-        $this->app->singleton('sf.route', function (){
-            return new RouteService(app('config')->get('sf-express'));
+        $config = app('config')->get('sf-express');
+        $data = [
+            'checkword'=>$config['checkWord'],
+            'accesscode'=>$config['clientCode']
+        ];
+        $this->app->singleton('sf.route', function () use($data){
+            return new RouteService($data);
         });
     }
 
