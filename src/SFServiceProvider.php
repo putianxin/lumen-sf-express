@@ -45,7 +45,8 @@ class SFServiceProvider extends ServiceProvider
         $config = app('config')->get('sf-express');
         $data = [
             'checkword'=>$config['checkWord'],
-            'accesscode'=>$config['clientCode']
+            'accesscode'=>$config['clientCode'],
+            'server'=>$config['server']
         ];
         $this->app->singleton('sf.route', function () use($data){
             return new RouteService($data);
