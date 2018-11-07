@@ -15,17 +15,17 @@ class AbstractBSP
     ];
 
     private $SERVICE = array(
-        'ptx\SF\BSP\DeliverTmService'          => 'DeliverTmService',
-        'ptx\SF\BSP\IdentitySearchService'     => 'IdentitySearchService',
-        'ptx\SF\BSP\OrderConfirmService'       => 'OrderConfirmService',
-        'ptx\SF\BSP\OrderFilterPushService'    => 'OrderFilterPushService',
-        'ptx\SF\BSP\OrderFilterService'        => 'OrderFilterService',
-        'ptx\SF\BSP\OrderSearchService'        => 'OrderSearchService',
-        'ptx\SF\BSP\OrderService'              => 'OrderService',
-        'ptx\SF\BSP\OrderZDService'            => 'OrderZDService',
-        'ptx\SF\BSP\RoutePushService'          => 'RoutePushService',
-        'ptx\SF\BSP\RouteService'              => 'RouteService',
-        'ptx\SF\BSP\ScopeService'              => 'ScopeService',
+        'Ptx\SF\BSP\DeliverTmService'          => 'DeliverTmService',
+        'Ptx\SF\BSP\IdentitySearchService'     => 'IdentitySearchService',
+        'Ptx\SF\BSP\OrderConfirmService'       => 'OrderConfirmService',
+        'Ptx\SF\BSP\OrderFilterPushService'    => 'OrderFilterPushService',
+        'Ptx\SF\BSP\OrderFilterService'        => 'OrderFilterService',
+        'Ptx\SF\BSP\OrderSearchService'        => 'OrderSearchService',
+        'Ptx\SF\BSP\OrderService'              => 'OrderService',
+        'Ptx\SF\BSP\OrderZDService'            => 'OrderZDService',
+        'Ptx\SF\BSP\RoutePushService'          => 'RoutePushService',
+        'Ptx\SF\BSP\RouteService'              => 'RouteService',
+        'Ptx\SF\BSP\ScopeService'              => 'ScopeService',
     );
 
     protected $ret = array(
