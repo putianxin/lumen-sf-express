@@ -15,17 +15,17 @@ class AbstractBSP
     ];
 
     private $SERVICE = array(
-        'hVenus\SFExpressAPI\BSP\DeliverTmService'          => 'DeliverTmService',
-        'hVenus\SFExpressAPI\BSP\IdentitySearchService'     => 'IdentitySearchService',
-        'hVenus\SFExpressAPI\BSP\OrderConfirmService'       => 'OrderConfirmService',
-        'hVenus\SFExpressAPI\BSP\OrderFilterPushService'    => 'OrderFilterPushService',
-        'hVenus\SFExpressAPI\BSP\OrderFilterService'        => 'OrderFilterService',
-        'hVenus\SFExpressAPI\BSP\OrderSearchService'        => 'OrderSearchService',
-        'hVenus\SFExpressAPI\BSP\OrderService'              => 'OrderService',
-        'hVenus\SFExpressAPI\BSP\OrderZDService'            => 'OrderZDService',
-        'hVenus\SFExpressAPI\BSP\RoutePushService'          => 'RoutePushService',
-        'hVenus\SFExpressAPI\BSP\RouteService'              => 'RouteService',
-        'hVenus\SFExpressAPI\BSP\ScopeService'              => 'ScopeService',
+        'ptx\SF\BSP\DeliverTmService'          => 'DeliverTmService',
+        'ptx\SF\BSP\IdentitySearchService'     => 'IdentitySearchService',
+        'ptx\SF\BSP\OrderConfirmService'       => 'OrderConfirmService',
+        'ptx\SF\BSP\OrderFilterPushService'    => 'OrderFilterPushService',
+        'ptx\SF\BSP\OrderFilterService'        => 'OrderFilterService',
+        'ptx\SF\BSP\OrderSearchService'        => 'OrderSearchService',
+        'ptx\SF\BSP\OrderService'              => 'OrderService',
+        'ptx\SF\BSP\OrderZDService'            => 'OrderZDService',
+        'ptx\SF\BSP\RoutePushService'          => 'RoutePushService',
+        'ptx\SF\BSP\RouteService'              => 'RouteService',
+        'ptx\SF\BSP\ScopeService'              => 'ScopeService',
     );
 
     protected $ret = array(
