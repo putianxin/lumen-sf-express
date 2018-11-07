@@ -1,0 +1,37 @@
+{
+    "name": "ptx/lumen-sf-express",
+    "description": "laravel、lumen顺风非官方SDK",
+    "keywords": [
+        "sf",
+        "sf-express",
+        "laravel",
+        "lumen"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/putianxin/lumen-sf-express",
+    "authors": [
+        {
+            "name": "ptx",
+            "email": "putianxin@vip.qq.com"
+        }
+    ],
+    "require": {
+        "hvenus/sf-express-api-php": "^0.0.3",
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ptx\\SF\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ptx\\SFServiceProvider"
+            ],
+            "aliases": {
+                "SF": "Ptx\\Facades\\SF"
+            }
+        }
+    }
+}
