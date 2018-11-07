@@ -41,9 +41,9 @@ class SFServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(dirname(__DIR__).'/config/sf-express.php', 'ihuyi');
+        $this->mergeConfigFrom(dirname(__DIR__).'/config/sf-express.php', 'sf-express');
 
-        $this->app->singleton('ihuyi.route', function (){
+        $this->app->singleton('sf.route', function (){
             return new RouteService(app('config')->get('sf-express'));
         });
     }
