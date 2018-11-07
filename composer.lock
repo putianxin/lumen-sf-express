@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed813b877a7f5d39009d9cd878157026",
+    "content-hash": "2246712b20e3df699c9211cdf01a8146",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -188,46 +188,6 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
-            "name": "hvenus/sf-express-api-php",
-            "version": "0.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hVenus/sf-express-api-php.git",
-                "reference": "c03cdabe7ac34c85df077e4a3d97f2ceeec39b5d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hVenus/sf-express-api-php/zipball/c03cdabe7ac34c85df077e4a3d97f2ceeec39b5d",
-                "reference": "c03cdabe7ac34c85df077e4a3d97f2ceeec39b5d",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "~6.0",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "hVenus\\SFExpressAPI\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "hVenus",
-                    "email": "kevin@fm618.com"
-                }
-            ],
-            "description": "sf-express API php version.",
-            "time": "2017-06-13T08:55:15+00:00"
-        },
-        {
             "name": "psr/http-message",
             "version": "1.0.1",
             "source": {
@@ -284,6 +244,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.1"
+    },
     "platform-dev": []
 }

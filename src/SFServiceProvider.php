@@ -4,7 +4,7 @@ namespace Ptx\Sf;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
-use hVenus\SFExpressAPI\BSP\RouteService;
+use Ptx\SF\BSP\RouteService;
 
 class SFServiceProvider extends ServiceProvider
 {
