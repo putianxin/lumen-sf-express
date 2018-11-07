@@ -14,4 +14,9 @@ class SF extends Facade
     {
         return app('sf.route');
     }
+
+    public static function order()
+    {
+        return app('sf.order');
+    }
 }

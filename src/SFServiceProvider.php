@@ -4,6 +4,7 @@ namespace Ptx\Sf;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
+use Ptx\SF\BSP\OrderService;
 use Ptx\SF\BSP\RouteService;
 
 class SFServiceProvider extends ServiceProvider
@@ -50,6 +51,10 @@ class SFServiceProvider extends ServiceProvider
         ];
         $this->app->singleton('sf.route', function () use($data){
             return new RouteService($data);
+        });
+
+        $this->app->singleton('sf.order', function () use($data){
+            return new OrderService($data);
         });
     }
 
