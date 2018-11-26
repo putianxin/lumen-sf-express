@@ -50,8 +50,7 @@ class RouteService extends AbstractBSP
      * @return array
      */
     protected function RouteResponse($xml) {
-        $data = $this->LoadXml($xml);
-
+        $data = $this->Load($xml);
         $service = $data['attributes']['service'];
 
         $head =  $data['Head'];
@@ -61,14 +60,20 @@ class RouteService extends AbstractBSP
             $t = [];
 
             $routeResponses = isset($data['Body']['RouteResponse'])?$data['Body']['RouteResponse']:null;
+
             if (isset($routeResponses) && count($routeResponses['Route'])>0) {
+
                 $routes = $routeResponses['Route'];
-                foreach($routes as $v) {
-                    $tmp = [];
-                    foreach($v['attributes'] as $k=>$a) {
-                        $tmp[$k] = $a;
+                if(count($routes) == 1){
+                    $t[$data['Body']['RouteResponse']['attributes']['mailno']][] = $routes['attributes'];
+                }else {
+                    foreach ($routes as $v) {
+                        $tmp = [];
+                        foreach ($v['attributes'] as $k => $a) {
+                            $tmp[$k] = $a;
+                        }
+                        $t[$data['Body']['RouteResponse']['attributes']['mailno']][] = $tmp;
                     }
-                    $t[$data['Body']['RouteResponse']['attributes']['mailno']][] = $tmp;
                 }
             }
             $result['data'] = $t;
