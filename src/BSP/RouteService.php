@@ -50,7 +50,7 @@ class RouteService extends AbstractBSP
      * @return array
      */
     protected function RouteResponse($xml) {
-        $data = $this->Load($xml);
+        $data = $this->LoadXml($xml);
         $service = $data['attributes']['service'];
 
         $head =  $data['Head'];
